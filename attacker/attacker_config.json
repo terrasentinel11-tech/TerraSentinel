@@ -1,0 +1,11 @@
+{
+  "attacker_ip": "192.168.1.10",
+  "ground_station_ip": "127.0.0.1",
+  "ground_station_port": 9000,
+  "watch_folder": "attack_inbox",
+  "scenario": "pre_sign_attack",
+  "attacks": ["cloud_injection", "fake_drought_proxy", "scanline_stripes"],
+  "lab_private_key": "../lab-keys/lab_ed25519.key",
+  "poll_interval_s": 3.0,
+  "wait_for_server": true
+}

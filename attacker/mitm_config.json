@@ -1,0 +1,13 @@
+{
+  "bind_ip": "0.0.0.0",
+  "listen_port": 9100,
+  "real_ground_station_ip": "172.18.138.207",
+  "real_ground_station_port": 9000,
+  "mode": "tamper",
+  "tamper_offset": 1024,
+  "tamper_length": 64,
+  "substitute_attack": "cloud_injection",
+  "lab_private_key": "../lab-keys/lab_ed25519.key",
+  "connect_timeout_s": 10.0,
+  "socket_timeout_s": 20.0
+}

@@ -1,0 +1,53 @@
+{
+  "default_next_contact_s": 120.0,
+  "max_header_bytes": 65536,
+  "max_payload_bytes": 2097152,
+  "socket_timeout_s": 5.0,
+  "connection_deadline_s": 10.0,
+  "max_concurrent_connections": 8,
+  "max_age_s": 300.0,
+  "max_future_skew_s": 60.0,
+  "advance_counter_on_block_failure": false,
+  "expected_shape": [13, 256, 256],
+  "expected_dtype": "uint16",
+  "block_grid": [16, 16],
+  "block_size": [16, 16],
+  "response_table": {
+    "sig_invalid_contact": {
+      "decision": "QUARANTINE",
+      "action": "quarantine, alert, request retransmission on a second path, serve last known good marked stale",
+      "release_mode": "stale_lkg",
+      "retransmit": true
+    },
+    "sig_invalid_no_contact": {
+      "decision": "UNVERIFIED_WAIT",
+      "action": "quarantine, alert, never use the tile, decision waits as unverified",
+      "release_mode": "none",
+      "retransmit": false
+    },
+    "stale_counter": {
+      "decision": "REJECT_REPLAY",
+      "action": "reject as replay or stale timestamp, log",
+      "release_mode": "none",
+      "retransmit": false
+    },
+    "blocks_fail_routine": {
+      "decision": "QUARANTINE",
+      "action": "quarantine, show tamper map, request retransmission",
+      "release_mode": "none",
+      "retransmit": true
+    },
+    "blocks_fail_urgent": {
+      "decision": "SALVAGE",
+      "action": "salvage mode: release verified blocks, mask failed ones, alert",
+      "release_mode": "salvage",
+      "retransmit": true
+    },
+    "accept_clean": {
+      "decision": "ACCEPT",
+      "action": "accept and log",
+      "release_mode": "full",
+      "retransmit": false
+    }
+  }
+}

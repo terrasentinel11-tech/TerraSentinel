@@ -1,0 +1,25 @@
+{
+  "sources": [
+    "/mnt/data/BLACK_PIXEL_AGRI_V3_REBUILD/examples/pilot_sources"
+  ],
+  "attacks": [
+    "field_patch_replacement",
+    "cloud_injection",
+    "fake_drought_proxy",
+    "atmospheric_haze",
+    "cloud_shadow_combined"
+  ],
+  "selection": "auto",
+  "coverage": "auto",
+  "level": "balanced",
+  "profile": "auto",
+  "assumed_scale": null,
+  "seed": 42,
+  "quotas": {
+    "field_patch_replacement": 1,
+    "cloud_injection": 1,
+    "fake_drought_proxy": 1,
+    "atmospheric_haze": 1,
+    "cloud_shadow_combined": 1
+  }
+}

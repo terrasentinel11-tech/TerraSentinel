@@ -1,0 +1,25 @@
+services:
+  ground-station:
+    build: .
+    container_name: eo-ground-station
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./keys:/app/keys:ro
+      - ground-station-state:/app/state
+    command: >
+      python -m ground_station.server
+      --host 0.0.0.0
+      --port 9000
+      --config config/defender_config.json
+      --pub-key keys/pi.key.pub
+      --state-file /app/state/replay.json
+    networks:
+      - eo-private-net
+
+networks:
+  eo-private-net:
+    driver: bridge
+
+volumes:
+  ground-station-state:

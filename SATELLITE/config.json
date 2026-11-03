@@ -1,0 +1,7 @@
+{
+  "satellite_id": "SAT-001",
+  "ground_station_ip": "172.18.138.207",
+  "ground_station_port": 9000,
+  "dataset_folder": "images",
+  "interval_seconds": 5
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "3.0a1",
+  "research_only": true,
+  "source_name": "farm_00.tif",
+  "source_sha256": "32005438444e6ad1e7da8fb3824cbe78c0cda7eab4555c4cdab6893dcfc4d8f4",
+  "requested_attack": "field_patch_replacement",
+  "executed_attack": "field_patch_replacement",
+  "family": "spatial",
+  "coverage": "local",
+  "severity": "balanced",
+  "seed": 42,
+  "selected_pixels": 2443,
+  "edited_pixel_count": 2439,
+  "edited_fraction": 0.0372161865234375,
+  "bands": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B8A",
+    "B09",
+    "B10",
+    "B11",
+    "B12"
+  ],
+  "dtype": "uint16",
+  "source_profile": "auto",
+  "assumed_dn_denominator": 10000.0,
+  "radiometric_warning": null,
+  "target_mask_kind": "selected region; not necessarily changed pixels",
+  "changed_mask_kind": "actual raster sample changes only",
+  "metadata_changes": {},
+  "attack_info": {
+    "method": "field_patch_replacement",
+    "coverage": "local",
+    "level": "balanced",
+    "severity_scalar": 0.34,
+    "donor_bbox_yxyx": [
+      9,
+      106,
+      64,
+      145
+    ],
+    "donor_rgb_delta": 0.1797
+  },
+  "scene_notes": [
+    "Candidate segments are unverified image regions, not cadastral field boundaries"
+  ],
+  "mean_target_ndvi_delta": -0.13567
+}

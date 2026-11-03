@@ -1,0 +1,8 @@
+input_profile: auto
+dataset: SEN12MS-CR
+attack: cloud_injection
+coverage: auto
+level: balanced
+seed: 42
+output_dir: results/standard_attack
+authorized_offline_only: true

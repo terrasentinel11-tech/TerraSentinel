@@ -1,0 +1,8 @@
+.\.venv\Scripts\python.exe -m ground_station.server `
+  --host 0.0.0.0 `
+  --port 9000 `
+  --config config\defender_config.json `
+  --pub-key "keys\redteam_lab.key.pub" `
+  --state-file "C:\BlackPixelLab\campaign-01-replay.json" `
+  --output-dir ".\received_images" `
+  --detector-model ".\detector_model\detector.joblib"

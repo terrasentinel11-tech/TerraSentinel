@@ -1,0 +1,16 @@
+{
+  "requested_pairs": 5,
+  "completed_pairs": 5,
+  "shortfall": 0,
+  "skipped_sources": 0,
+  "counts_by_attack": {
+    "field_patch_replacement": 1,
+    "fake_drought_proxy": 1,
+    "atmospheric_haze": 1,
+    "cloud_injection": 1,
+    "cloud_shadow_combined": 1
+  },
+  "output_structure": "attack_folder/pair_ID_original.tif, pair_ID_attacked.tif, pair_ID_preview.png",
+  "calibration_assumption": null,
+  "dataset_source_count": 7
+}
