@@ -1,0 +1,2 @@
+family,n,detected_core,mean_IoU,mean_pixel_AUC,median_size
+unknown,81,"81/81 = 100.0% [95.5%, 100.0%]",0.001,0.511,0.04

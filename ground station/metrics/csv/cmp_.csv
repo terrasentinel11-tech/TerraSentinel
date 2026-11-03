@@ -1,0 +1,14 @@
+,v3_clean_only
+use_local_context,True
+hgb_max_iter,150
+test_FPR,1.0
+test_FPR_wilson,"[0.993, 1.0]"
+test_FPR_scene_boot,"[1.0, 1.0]"
+pairs_AUC,0.61
+pairs_AUC_ci,"[0.565, 0.662]"
+pairs_TPR_core,1.0
+pairs_TPR_core_wilson,"[0.955, 1.0]"
+mean_IoU,0.001
+mean_pixel_AUC,0.511
+median_latency_ms,733.3
+process_memory_MB,2860.601

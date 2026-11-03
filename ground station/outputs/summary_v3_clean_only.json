@@ -1,0 +1,32 @@
+{
+ "run_tag": "v3_clean_only",
+ "build_id": "73725375",
+ "use_local_context": true,
+ "hgb_max_iter": 150,
+ "test_FPR": 1.0,
+ "test_FPR_wilson": [
+  0.9929361784754973,
+  1.0
+ ],
+ "test_FPR_scene_boot": [
+  1.0,
+  1.0
+ ],
+ "threshold": 1.1963075205170106,
+ "pairs_AUC": 0.610120408474318,
+ "pairs_AUC_ci": [
+  0.5648529187623839,
+  0.6619532083523852
+ ],
+ "pairs_TPR_core": 1.0,
+ "pairs_TPR_core_wilson": [
+  0.954720325877871,
+  0.9999999999999999
+ ],
+ "mean_IoU": 0.0009331124758180121,
+ "mean_pixel_AUC": 0.5110606668570361,
+ "n_pairs": 95,
+ "n_metadata_only": 14,
+ "median_latency_ms": 730.8928754991939,
+ "process_memory_MB": 2901.090304
+}
